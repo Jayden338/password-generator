@@ -50,6 +50,37 @@ if (specialCharactersUser) {
   return prompt;
  }
 
+// Conditional statement that adds array of special characters into array of possible characters based on user input
+// Push new random special character to guaranteedCharacters
+ 
+  if (confirm.specialCharactersUser) { 
+    userInput = userInput.concat(specialCharacters);
+  } 
+  
+  // Conditional statement that adds array of numeric characters into array of possible characters based on user input
+  // Push new random special character to guaranteedCharacters
+ 
+  if (confirm.numericUser) { 
+    userInput = userInput.concat(numeric);
+  } 
+
+  // Conditional statement that adds array of lowercase characters into array of possible characters based on user input
+  // Push new random lower-cased character to guaranteedCharacters
+ 
+  if (confirm.lowerCaseUser) {
+    userInput = userInput.concat(lowerCase); 
+  } 
+  
+  
+  // Conditional statement that adds array of uppercase characters into array of possible characters based on user input
+  // Push new random upper-cased character to guaranteedCharacters
+ 
+  if (confirm.upperCaseUser) { 
+    userInput = userInput.concat(upperCase);
+  } 
+console.log(userInput)
+
+
 // Function to generate password with user input
 function generatePassword() {
 }
