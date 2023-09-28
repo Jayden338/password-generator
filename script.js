@@ -40,6 +40,15 @@ return prompt;
 // Variable to store boolean regarding the inclusion of uppercase characters
   var upperCaseUser = confirm("Include upper case?")
   
+// Conditional statement to check if user does not include any types of characters. Password generator ends if all four variables evaluate to false
+if (specialCharactersUser) {
+} else if (numericUser) {
+} else if (lowerCaseUser) {
+} else if (upperCaseUser) {
+} else {
+  window.alert ("Must confirm at least one box") 
+  return prompt;
+ }
 
 // Function to generate password with user input
 function generatePassword() {
