@@ -6,6 +6,7 @@ I built a Random Password Generator for my Coding Bootcamp with a beginning star
 
 # Screenshot 
 
+![Random Number Generator](https://github.com/Jayden338/password-generator/assets/136901914/9a9cdfbd-13b9-4d3a-9028-506dd5085308)
 
 
 ## Usage 
