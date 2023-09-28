@@ -27,7 +27,6 @@ window.alert ("Must be less than 128 characters");
 return prompt;
 } 
 
-
 // Variable to store boolean regarding the inclusion of special characters
   var specialCharactersUser = confirm("Include Special Characters?")
 
@@ -52,7 +51,7 @@ if (specialCharactersUser) {
 
 // Object to store user input
   var passwordOptions = {
-    length: length,
+    characterLength: characterLength,
     upperCaseUser: upperCaseUser,
     lowerCaseUser: lowerCaseUser,
     specialCharactersUser: specialCharactersUser,
@@ -60,15 +59,15 @@ if (specialCharactersUser) {
   
   return passwordOptions;
 }
-  
 
-// Conditional statement that adds array of special characters into array of possible characters based on user input
-// Push new random special character to guaranteedCharacters
+// Function for getting a random element from an array
+function getRandom(arr) {
+  var randomLetter = Math.floor(Math.random() * userInput.length);
+ }
  
-  if (confirm.specialCharactersUser) { 
-    userInput = userInput.concat(specialCharacters);
-  } 
-  
+  // Function to generate password with user input
+function generatePassword() {
+  var options = getPasswordOptions();
   // Conditional statement that adds array of numeric characters into array of possible characters based on user input
   // Push new random special character to guaranteedCharacters
  
@@ -92,11 +91,7 @@ if (specialCharactersUser) {
   } 
 console.log(userInput)
 
-
-// Function to generate password with user input
-function generatePassword() {
 }
-
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
