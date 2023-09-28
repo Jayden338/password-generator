@@ -39,14 +39,7 @@ return prompt;
 
 // Variable to store boolean regarding the inclusion of uppercase characters
   var upperCaseUser = confirm("Include upper case?")
-
-
-
-
-  // Function for getting a random element from an array
-function getRandom(arr) {
-}
-
+  
 
 // Function to generate password with user input
 function generatePassword() {
