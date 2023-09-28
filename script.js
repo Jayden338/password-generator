@@ -48,7 +48,19 @@ if (specialCharactersUser) {
 } else {
   window.alert ("Must confirm at least one box") 
   return prompt;
- }
+} 
+
+// Object to store user input
+  var passwordOptions = {
+    length: length,
+    upperCaseUser: upperCaseUser,
+    lowerCaseUser: lowerCaseUser,
+    specialCharactersUser: specialCharactersUser,
+};
+  
+  return passwordOptions;
+}
+  
 
 // Conditional statement that adds array of special characters into array of possible characters based on user input
 // Push new random special character to guaranteedCharacters
@@ -98,4 +110,4 @@ passwordText.value = password;
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);  
-}
+
